@@ -1,0 +1,10 @@
+.import/
+.export/
+*.godot/imported/
+*.tmp
+*.log
+.cache/
+mono/
+*.mono/
+*.import/
+*.translation
