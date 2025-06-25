@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://d00pg65s87qfo"]
+
+[ext_resource type="Texture2D" uid="uid://dpitmafhquhjo" path="res://assets/background/image.png" id="1_fr1um"]
+[ext_resource type="Texture2D" uid="uid://duvt3dow8aupu" path="res://assets/tiles/ground_tile.png" id="1_jbqir"]
+[ext_resource type="PackedScene" uid="uid://dh87ucwi4yk8x" path="res://scenes/player/player.tscn" id="2_yautc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yautc"]
+size = Vector2(800, 50)
+
+[node name="TestLevel" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(-2, 120)
+scale = Vector2(0.839844, 0.839844)
+texture = ExtResource("1_fr1um")
+
+[node name="ground" type="StaticBody2D" parent="."]
+position = Vector2(0, 200)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ground"]
+position = Vector2(3, -3)
+shape = SubResource("RectangleShape2D_yautc")
+
+[node name="Sprite2D" type="Sprite2D" parent="ground"]
+position = Vector2(3.5, 0)
+scale = Vector2(12.4531, 1)
+texture = ExtResource("1_jbqir")
+
+[node name="Player" parent="." instance=ExtResource("2_yautc")]
+position = Vector2(-373, 125)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+visible = false
+anchors_preset = -1
+anchor_left = -0.208
+anchor_top = 0.142
+anchor_right = 0.029
+anchor_bottom = 0.245
+offset_left = -0.384003
+offset_top = -0.0160065
+offset_right = -0.408001
+offset_bottom = 0.23999
+text = "тест
+"
