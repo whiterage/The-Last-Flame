@@ -1,11 +1,14 @@
+CollisionShape2D
+StaticBody2D
+WorldEnvironment
 Sprite2D
+ParallaxLayer
+ParallaxBackground
+TileMap
 Label
 CanvasLayer
-WorldEnvironment
 PointLight2D
 Camera2D
 CharacterBody2D
-CollisionShape2D
-StaticBody2D
 Node2D
 AnimatedSprite2D
