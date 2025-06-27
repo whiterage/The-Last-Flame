@@ -5,28 +5,35 @@ const JUMP_VELOCITY := -400
 const GRAVITY := 900
 
 # 🔥 Пламя
-var flame := 1.0  # от 1.0 (ярко) до 0.0 (угас)
+var flame := 100.0  # от 100 до 0
+var hud
 
 @onready var flame_light: Light2D = $FlameLight
+@onready var death_screen = get_parent().get_node("DeathScreen")
 
 func _ready():
-	update_light()
+	# Найдём HUD — путь зависит от твоей сцены!
+	# Если HUD в корне уровня:
+	hud = get_parent().get_node("HUD")
 
 func _physics_process(delta):
+	# Гравитация
 	if not is_on_floor():
 		velocity.y += GRAVITY * delta
 
+	# Движение влево/вправо
 	var direction = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 	velocity.x = direction * SPEED
 
+	# Прыжок
 	if is_on_floor() and Input.is_action_just_pressed("ui_accept"):
 		velocity.y = JUMP_VELOCITY
 
 	move_and_slide()
 
 	# 🔻 Постепенное угасание
-	flame -= delta * 0.05  # уменьшается по чуть-чуть
-	flame = clamp(flame, 0.0, 1.0)
+	flame -= delta * 5
+	flame = clamp(flame, 0, 100)
 
 	update_light()
 
@@ -34,13 +41,25 @@ func _physics_process(delta):
 	if flame <= 0.0:
 		die()
 
+	# 🔻 Обновляем HUD
+	if hud:
+		hud.update_flame(flame)
+
 func update_light():
-	# Масштабируем яркость света по значению пламени
-	flame_light.energy = flame * 2.0  # можно экспериментировать
+	# Масштабируем яркость света от пламени (делим на 100, если energy от 0 до 1)
+	flame_light.energy = flame / 100.0
 
 func die():
 	print("🔥 Герой угас...")
-	var label = get_tree().get_root().get_node("TestLevel/CanvasLayer/Label")
-	label.text = "🔥 Герой угас..."
-	label.visible = true
+	death_screen.visible = true  # показываем экран смерти
+	queue_free()  # уничтожаем игрока
+
+	# Показываем надпись, если Label есть
+	var label_path = "TestLevel/CanvasLayer/Label"
+	if get_tree().get_root().has_node(label_path):
+		var label = get_tree().get_root().get_node(label_path)
+		label.text = "🔥 Герой угас..."
+		label.visible = true
+
+	# Удаляем игрока
 	queue_free()

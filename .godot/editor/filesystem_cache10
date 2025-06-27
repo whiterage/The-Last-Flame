@@ -1,12 +1,18 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1750868499
+::res://::1751034087
 icon.svg::CompressedTexture2D/CompressedTexture2D::8217158719528075541::1750809061::1750809065::1::::<><><>0<>0<>b08827d0d3b63a9e15f76e8e9f4b1d01<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile/TextFile::-1::1750810487::0::1::::<><><>0<>0<><>::
-::res://assets/::1750861877
-::res://assets/background/::1750861978
+::res://assets/::1751038342
+::res://assets/background/::1751049497
+deathscreen.png::CompressedTexture2D::1997939428975659235::1751049440::1751049500::1::::<><><>0<>0<>b8c782a3aaa3b36e8d7f81f87c0bc07c<>res://.godot/imported/deathscreen.png-631edad5bd1ce9ff65ece7ed39d94ec4.ctex::
 image.png::CompressedTexture2D/CompressedTexture2D::8229784788135934620::1750861819::1750861978::1::::<><><>0<>0<>af7275b5d3f48a0ea188136604161f23<>res://.godot/imported/image.png-227a6297e36746eca9003d8b58321d80.ctex::
+::res://assets/effects hud/::1751043787
+image.png::CompressedTexture2D::3422815084543803354::1751043762::1751043787::1::::<><><>0<>0<>18d2d36eba1bdb0459c190d4e33a1e56<>res://.godot/imported/image.png-e99738e50c470a17d14614edf409466e.ctex::
+полоса.png::CompressedTexture2D::6858711836242824616::1751043648::1751043787::1::::<><><>0<>0<>237bd7babd61801c7f5b26c76472060f<>res://.godot/imported/полоса.png-b29ca8d93458b110678149a8d651d99f.ctex::
+фон.png::CompressedTexture2D::862461982105082033::1751041387::1751043787::1::::<><><>0<>0<>478765bd5aa23d9aa5e37840a6af7ae6<>res://.godot/imported/фон.png-95dad7b3d4c24859230fa18e24015409.ctex::
 ::res://assets/fonts/::1750810262
-::res://assets/lights/::1750859609
+::res://assets/lights/::1751037823
+FlameIcon.png::CompressedTexture2D::3411945028416818882::1751037758::1751037823::1::::<><><>0<>0<>f6aaeb70177decb55b743e99dd5611dd<>res://.godot/imported/FlameIcon.png-467e8f52737b51838afd228421f20415.ctex::
 flame_light_texture.png::CompressedTexture2D/CompressedTexture2D::343427793344911729::1750859534::1750859609::1::::<><><>0<>0<>127dd69462b7a667588eac19f1a454f6<>res://.godot/imported/flame_light_texture.png-a132e179fe118f10f92346113524959c.ctex::
 ::res://assets/player/::1750854406
 player_sprite.png::CompressedTexture2D/CompressedTexture2D::5133116946116834136::1750854357::1750854406::1::::<><><>0<>0<>5e97d1e5199157b9de138fa1cf93efa8<>res://.godot/imported/player_sprite.png-550f8cbf3352fb1bbd6c7d8501894e94.ctex::
@@ -14,18 +20,22 @@ player_sprite.png::CompressedTexture2D/CompressedTexture2D::5133116946116834136:
 ::res://assets/sprites/::1750810206
 ::res://assets/tiles/::1750868720
 ground_tile.png::CompressedTexture2D/CompressedTexture2D::8607594662008120370::1750853624::1750853708::1::::<><><>0<>0<>53aa32d746db992000530efacafd1e5f<>res://.godot/imported/ground_tile.png-e0a3586cc472d08da4d393292bc53693.ctex::
-image.png::CompressedTexture2D::5588021689566170473::1750868145::1750868720::1::::<><><>0<>0<>9a45df072a50d8ce45067da5c744092a<>res://.godot/imported/image.png-57bd0e53a21993ff6a0c7384050ceba3.ctex::
+image.png::CompressedTexture2D/CompressedTexture2D::5588021689566170473::1750868145::1750868720::1::::<><><>0<>0<>9a45df072a50d8ce45067da5c744092a<>res://.godot/imported/image.png-57bd0e53a21993ff6a0c7384050ceba3.ctex::
 ::res://autoload/::1750810397
+::res://devlog/::1750882081
+week-01.md::TextFile/TextFile::-1::1750882081::0::1::::<><><>0<>0<><>::
 ::res://scenes/::1750810276
 ::res://scenes/enemies/::1750810309
-::res://scenes/levels/::1750869932
-image.png::CompressedTexture2D::199252798929221519::1750869318::1750868833::1::::<><><>0<>0<>4908f0e88c0d74e6ec021fae928aa06e<>res://.godot/imported/image.png-a3117ab8d278f09124ac7b8d15d4f6b0.ctex::
-test_level.tscn::PackedScene::8966515730967733576::1750863818::0::1::::<><><>0<>0<><>::uid://dpitmafhquhjo::::res://assets/background/image.png<>uid://duvt3dow8aupu::::res://assets/tiles/ground_tile.png<>uid://dh87ucwi4yk8x::::res://scenes/player/player.tscn
-Снимок экрана 2025-06-25 в 7.45.30 PM.png::CompressedTexture2D::3575331398184259915::1750869932::1750869933::1::::<><><>0<>0<>32fd85c385551d2dab42b522ed443c69<>res://.godot/imported/Снимок экрана 2025-06-25 в 7.45.30 PM.png-21fb451d7e3b25576aad3ab56dce607c.ctex::
-::res://scenes/player/::1750863818
-player.gd::GDScript::756655342382671115::1750861385::0::1::::<>CharacterBody2D<><>0<>0<><>::
-player.tscn::PackedScene::7720687221511717809::1750863818::0::1::::<><><>0<>0<><>::uid://k1sadntinmj8::::res://scenes/player/player.gd<>uid://cferxlgh7w5j5::::res://assets/player/player_sprite.png<>uid://e5mg8wfigfth::::res://assets/lights/flame_light_texture.png
-::res://scenes/ui/::1750810336
+::res://scenes/levels/::1751048117
+image.png::CompressedTexture2D/CompressedTexture2D::199252798929221519::1750869318::1750868833::1::::<><><>0<>0<>4908f0e88c0d74e6ec021fae928aa06e<>res://.godot/imported/image.png-a3117ab8d278f09124ac7b8d15d4f6b0.ctex::
+test_level.tscn::PackedScene::8966515730967733576::1751048117::0::1::::<><><>0<>0<><>::uid://dpitmafhquhjo::::res://assets/background/image.png<>uid://clu45vlk1s4u4::::res://assets/tiles/image.png<>uid://dh87ucwi4yk8x::::res://scenes/player/player.tscn<>uid://byl3q0x0ub3p0::::res://scenes/ui/hud.tscn
+Снимок экрана 2025-06-25 в 7.45.30 PM.png::CompressedTexture2D/CompressedTexture2D::3575331398184259915::1750869932::1750869933::1::::<><><>0<>0<>32fd85c385551d2dab42b522ed443c69<>res://.godot/imported/Снимок экрана 2025-06-25 в 7.45.30 PM.png-21fb451d7e3b25576aad3ab56dce607c.ctex::
+::res://scenes/player/::1751048117
+player.gd::GDScript::756655342382671115::1751045938::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::7720687221511717809::1751048117::0::1::::<><><>0<>0<><>::uid://k1sadntinmj8::::res://scenes/player/player.gd<>uid://cferxlgh7w5j5::::res://assets/player/player_sprite.png<>uid://e5mg8wfigfth::::res://assets/lights/flame_light_texture.png
+::res://scenes/ui/::1751048118
+hud.tscn::PackedScene::4095391084577414831::1751048118::0::1::::<><><>0<>0<><>::uid://bou1ia7yq82rm::::res://assets/lights/FlameIcon.png<>uid://drrwjqcor4wef::::res://scenes/ui/hud.gd<>uid://c4yn8nbrw7gro::::res://assets/effects hud/полоса.png
+hud.gd::GDScript::8388919504854066333::1751047033::0::1::::<>CanvasLayer<><>0<>0<><>::
 ::res://scripts/::1750810360
 ::res://scripts/enemies/::1750810373
 ::res://scripts/player/::1750810222

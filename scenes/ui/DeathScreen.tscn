@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://vixgn8p2oc5c"]
+
+[ext_resource type="Texture2D" uid="uid://3p21gxpbef1l" path="res://assets/background/deathscreen.png" id="1_pli0r"]
+[ext_resource type="Script" uid="uid://caqx054j7om7d" path="res://scenes/ui/death_screen.gd" id="1_yar2g"]
+
+[node name="DeathScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_yar2g")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1536.0
+offset_bottom = 1024.0
+texture = ExtResource("1_pli0r")
+
+[node name="Button" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 643.0
+offset_top = 953.0
+offset_right = 820.0
+offset_bottom = 1005.0
+text = "Restart Game"
+
+[connection signal="pressed" from="TextureRect/Button" to="." method="_on_button_pressed"]

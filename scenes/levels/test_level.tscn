@@ -1,8 +1,10 @@
-[gd_scene load_steps=8 format=4 uid="uid://d00pg65s87qfo"]
+[gd_scene load_steps=11 format=4 uid="uid://d00pg65s87qfo"]
 
 [ext_resource type="Texture2D" uid="uid://dpitmafhquhjo" path="res://assets/background/image.png" id="1_fr1um"]
 [ext_resource type="Texture2D" uid="uid://clu45vlk1s4u4" path="res://assets/tiles/image.png" id="1_v45ci"]
 [ext_resource type="PackedScene" uid="uid://dh87ucwi4yk8x" path="res://scenes/player/player.tscn" id="2_yautc"]
+[ext_resource type="PackedScene" uid="uid://byl3q0x0ub3p0" path="res://scenes/ui/hud.tscn" id="3_v45ci"]
+[ext_resource type="PackedScene" uid="uid://vixgn8p2oc5c" path="res://scenes/ui/DeathScreen.tscn" id="5_48ne7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_48ne7"]
 texture = ExtResource("1_v45ci")
@@ -10021,7 +10023,10 @@ texture = ExtResource("1_v45ci")
 sources/0 = SubResource("TileSetAtlasSource_48ne7")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fr1um"]
-size = Vector2(278, 32.9)
+size = Vector2(77.9, 9.4)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v45ci"]
+size = Vector2(191.3, 15.3)
 
 [sub_resource type="Environment" id="Environment_v45ci"]
 background_mode = 2
@@ -10040,10 +10045,15 @@ tile_set = SubResource("TileSet_6xh4u")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="GroundTileMap"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundTileMap/StaticBody2D"]
-position = Vector2(618, 368.5)
+[node name="1 ground" type="CollisionShape2D" parent="GroundTileMap/StaticBody2D"]
+position = Vector2(-382.5, 234)
 scale = Vector2(10, 10)
 shape = SubResource("RectangleShape2D_fr1um")
+
+[node name="2 ground" type="CollisionShape2D" parent="GroundTileMap/StaticBody2D"]
+position = Vector2(1064.5, 252.5)
+scale = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_v45ci")
 
 [node name="Player" parent="." instance=ExtResource("2_yautc")]
 position = Vector2(-517, 148)
@@ -10074,3 +10084,8 @@ texture = ExtResource("1_fr1um")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_v45ci")
+
+[node name="HUD" parent="." instance=ExtResource("3_v45ci")]
+
+[node name="DeathScreen" parent="." instance=ExtResource("5_48ne7")]
+visible = false

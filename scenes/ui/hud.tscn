@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://byl3q0x0ub3p0"]
+
+[ext_resource type="Texture2D" uid="uid://bou1ia7yq82rm" path="res://assets/lights/FlameIcon.png" id="1_0mwgc"]
+[ext_resource type="Script" uid="uid://drrwjqcor4wef" path="res://scenes/ui/hud.gd" id="1_bo48s"]
+[ext_resource type="Texture2D" uid="uid://c4yn8nbrw7gro" path="res://assets/effects hud/полоса.png" id="1_hqnrr"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_bo48s")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="FlameBar" type="TextureProgressBar" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 36.0
+offset_top = 33.0
+offset_right = 1572.0
+offset_bottom = 1057.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.1, 0.1)
+value = 100.0
+texture_progress = ExtResource("1_hqnrr")
+
+[node name="FlameIcon" type="Sprite2D" parent="Control"]
+position = Vector2(57, 55)
+scale = Vector2(0.109375, 0.109375)
+texture = ExtResource("1_0mwgc")
