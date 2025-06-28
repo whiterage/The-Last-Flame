@@ -1,8 +1,9 @@
 Button
-TextureRect
+VBoxContainer
+ColorRect
 Control
 Label
-ColorRect
+TextureRect
 Sprite2D
 TextureProgressBar
 CanvasLayer
@@ -11,4 +12,3 @@ StaticBody2D
 WorldEnvironment
 ParallaxLayer
 ParallaxBackground
-TileMap

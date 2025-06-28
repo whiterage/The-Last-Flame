@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="The Last Flame"
-run/main_scene="uid://d00pg65s87qfo"
+run/main_scene="uid://41uioq03sd8a"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 

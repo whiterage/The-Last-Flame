@@ -1,7 +1,9 @@
-res://scenes/levels/test_level.tscn
+res://scenes/ui/main_menu.tscn
+res://main_menu.gd
 res://scenes/player/player.tscn
+res://scenes/levels/test_level.tscn
 res://scenes/ui/hud.tscn
-res://scenes/ui/hud.gd
-res://scenes/player/player.gd
 res://scenes/ui/DeathScreen.tscn
-res://scenes/ui/death_screen.gd
+res://pause_menu.gd
+res://scenes/ui/pause_menu.tscn
+res://scenes/player/player.gd

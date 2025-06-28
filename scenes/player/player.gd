@@ -49,6 +49,10 @@ func update_light():
 	# Масштабируем яркость света от пламени (делим на 100, если energy от 0 до 1)
 	flame_light.energy = flame / 100.0
 
+func _unhandled_input(event):
+	if event.is_action_pressed("ui_cancel"):
+		get_tree().change_scene_to_file("res://scenes/ui/main_menu.tscn")
+
 func die():
 	print("🔥 Герой угас...")
 	death_screen.visible = true  # показываем экран смерти
