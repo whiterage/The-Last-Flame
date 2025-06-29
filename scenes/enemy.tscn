@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3 uid="uid://csa5b7t7dppat"]
+
+[ext_resource type="Script" uid="uid://ktn2pwcckpxr" path="res://scripts/enemies/enemy.gd" id="1_md0e3"]
+[ext_resource type="Texture2D" uid="uid://cotbrftptvapq" path="res://assets/player/enemy.png" id="2_4ra3w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5uy6h"]
+size = Vector2(196, 156)
+
+[sub_resource type="Animation" id="Animation_c4w8v"]
+resource_name = "idle"
+loop_mode = 1
+
+[sub_resource type="Animation" id="Animation_xwavj"]
+length = 0.001
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nenq2"]
+_data = {
+&"RESET": SubResource("Animation_xwavj"),
+&"idle": SubResource("Animation_c4w8v")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_md0e3"]
+size = Vector2(196.75, 152.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ra3w"]
+size = Vector2(197, 154.375)
+
+[node name="enemy" type="CharacterBody2D" groups=["enemies"]]
+script = ExtResource("1_md0e3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(759, 361)
+scale = Vector2(-0.262631, 0.234391)
+texture = ExtResource("2_4ra3w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(754, 373)
+shape = SubResource("RectangleShape2D_5uy6h")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_nenq2")
+}
+
+[node name="attack" type="Area2D" parent="."]
+position = Vector2(-2, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="attack"]
+position = Vector2(757.625, 375.25)
+shape = SubResource("RectangleShape2D_md0e3")
+
+[node name="damage" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="damage"]
+position = Vector2(757.5, 374.188)
+shape = SubResource("RectangleShape2D_4ra3w")
+
+[connection signal="body_entered" from="attack" to="." method="_on_attack_body_entered"]
+[connection signal="body_entered" from="damage" to="." method="_on_damage_body_entered"]

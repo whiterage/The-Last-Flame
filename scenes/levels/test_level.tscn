@@ -1,10 +1,14 @@
-[gd_scene load_steps=11 format=4 uid="uid://d00pg65s87qfo"]
+[gd_scene load_steps=15 format=4 uid="uid://d00pg65s87qfo"]
 
 [ext_resource type="Texture2D" uid="uid://dpitmafhquhjo" path="res://assets/background/image.png" id="1_fr1um"]
 [ext_resource type="Texture2D" uid="uid://clu45vlk1s4u4" path="res://assets/tiles/image.png" id="1_v45ci"]
 [ext_resource type="PackedScene" uid="uid://dh87ucwi4yk8x" path="res://scenes/player/player.tscn" id="2_yautc"]
+[ext_resource type="Script" uid="uid://q4yb3gkism67" path="res://scenes/levels/canvas_layer.gd" id="3_cyt5c"]
 [ext_resource type="PackedScene" uid="uid://byl3q0x0ub3p0" path="res://scenes/ui/hud.tscn" id="3_v45ci"]
 [ext_resource type="PackedScene" uid="uid://vixgn8p2oc5c" path="res://scenes/ui/DeathScreen.tscn" id="5_48ne7"]
+[ext_resource type="PackedScene" uid="uid://qnoomkjdeem7" path="res://scenes/ui/pause_menu.tscn" id="7_7x1jh"]
+[ext_resource type="PackedScene" uid="uid://n6hejpj7vr7d" path="res://scenes/pickups/flame_pickup.tscn" id="8_7x1jh"]
+[ext_resource type="PackedScene" uid="uid://csa5b7t7dppat" path="res://scenes/enemy.tscn" id="9_hfwtw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_48ne7"]
 texture = ExtResource("1_v45ci")
@@ -10059,6 +10063,10 @@ shape = SubResource("RectangleShape2D_v45ci")
 position = Vector2(-517, 148)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+process_mode = 3
+script = ExtResource("3_cyt5c")
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("7_7x1jh")]
 
 [node name="Label" type="Label" parent="CanvasLayer"]
 visible = false
@@ -10074,6 +10082,8 @@ offset_bottom = 0.23999
 text = "тест
 "
 
+[node name="HUD" parent="CanvasLayer" instance=ExtResource("3_v45ci")]
+
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -10085,7 +10095,11 @@ texture = ExtResource("1_fr1um")
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_v45ci")
 
-[node name="HUD" parent="." instance=ExtResource("3_v45ci")]
-
 [node name="DeathScreen" parent="." instance=ExtResource("5_48ne7")]
 visible = false
+
+[node name="FlamePickup" parent="." instance=ExtResource("8_7x1jh")]
+position = Vector2(234, 79)
+
+[node name="enemy" parent="." instance=ExtResource("9_hfwtw")]
+position = Vector2(-103, -280)

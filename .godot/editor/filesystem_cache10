@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1751160737
+::res://::1751197658
 icon.svg::CompressedTexture2D/CompressedTexture2D::8217158719528075541::1750809061::1750809065::1::::<><><>0<>0<>b08827d0d3b63a9e15f76e8e9f4b1d01<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile/TextFile::-1::1750810487::0::1::::<><><>0<>0<><>::
 ::res://assets/::1751148992
@@ -7,8 +7,9 @@ README.md::TextFile/TextFile::-1::1750810487::0::1::::<><><>0<>0<><>::
 deathscreen.png::CompressedTexture2D/CompressedTexture2D::1997939428975659235::1751049440::1751049500::1::::<><><>0<>0<>b8c782a3aaa3b36e8d7f81f87c0bc07c<>res://.godot/imported/deathscreen.png-631edad5bd1ce9ff65ece7ed39d94ec4.ctex::
 image.png::CompressedTexture2D/CompressedTexture2D::8229784788135934620::1750861819::1750861978::1::::<><><>0<>0<>af7275b5d3f48a0ea188136604161f23<>res://.godot/imported/image.png-227a6297e36746eca9003d8b58321d80.ctex::
 main menu.png::CompressedTexture2D/CompressedTexture2D::1838693092111542504::1751146217::1751146562::1::::<><><>0<>0<>c5bf9dbc01ee40599e3fef9672117f50<>res://.godot/imported/main menu.png-bc62039d4dbb52ecdd4e530ccfda5c63.ctex::
-::res://assets/effects/::1751158441
+::res://assets/effects/::1751207811
 black-wall-texture-background-grainy-texture-background-wall-scratch-texture-background_1026065-105005.png::CompressedTexture2D/CompressedTexture2D::1698772271714932275::1751151936::1751151953::1::::<><><>0<>0<>dcd8e3968b464ec86837b59177e32cca<>res://.godot/imported/black-wall-texture-background-grainy-texture-background-wall-scratch-texture-background_1026065-105005.png-23bc7aeaff996e714e48ef2c3958be8d.ctex::
+fire_no_bg.png::CompressedTexture2D::6551026573596684057::1751207755::1751207811::1::::<><><>0<>0<>bfd4ee44bb373dcf5cbafbbed65f96b1<>res://.godot/imported/fire_no_bg.png-b00d8ff12073af254db4098906918a9a.ctex::
 fire_transparent.png::CompressedTexture2D/CompressedTexture2D::906507008421303219::1751148773::1751149009::1::::<><><>0<>0<>3ebfb5b5f3f4f317b44879f13044618e<>res://.godot/imported/fire_transparent.png-b7ec316fa576bedd5bad490ab226e170.ctex::
 image.png::CompressedTexture2D/CompressedTexture2D::3422815084543803354::1751043762::1751149009::1::::<><><>0<>0<>9c33c3c25d91d84dffe34acb7688d178<>res://.godot/imported/image.png-ca90c4316b1b40d9e5aa684a20aba121.ctex::
 pngtree-fire-sparks-glowing-texture-png-image_6140114.png::CompressedTexture2D/CompressedTexture2D::6451101891652449036::1751158409::1751158441::1::::<><><>0<>0<>975ec43dfe16d8e07cb72e0de792dc6d<>res://.godot/imported/pngtree-fire-sparks-glowing-texture-png-image_6140114.png-792316f1760490fc9d52eafe226ab065.ctex::
@@ -18,7 +19,8 @@ pngtree-fire-sparks-glowing-texture-png-image_6140114.png::CompressedTexture2D/C
 ::res://assets/lights/::1751037823
 FlameIcon.png::CompressedTexture2D/CompressedTexture2D::3411945028416818882::1751037758::1751037823::1::::<><><>0<>0<>f6aaeb70177decb55b743e99dd5611dd<>res://.godot/imported/FlameIcon.png-467e8f52737b51838afd228421f20415.ctex::
 flame_light_texture.png::CompressedTexture2D/CompressedTexture2D::343427793344911729::1750859534::1750859609::1::::<><><>0<>0<>127dd69462b7a667588eac19f1a454f6<>res://.godot/imported/flame_light_texture.png-a132e179fe118f10f92346113524959c.ctex::
-::res://assets/player/::1750854406
+::res://assets/player/::1751212615
+enemy.png::CompressedTexture2D::5794799723810723206::1751212223::1751212622::1::::<><><>0<>0<>6707152c8c1d275d301543e058b14f91<>res://.godot/imported/enemy.png-8d59b0c6852a4a1e8fd5db3b0d3d064e.ctex::
 player_sprite.png::CompressedTexture2D/CompressedTexture2D::5133116946116834136::1750854357::1750854406::1::::<><><>0<>0<>5e97d1e5199157b9de138fa1cf93efa8<>res://.godot/imported/player_sprite.png-550f8cbf3352fb1bbd6c7d8501894e94.ctex::
 ::res://assets/sounds/::1750810211
 ::res://assets/sprites/::1750810206
@@ -26,10 +28,11 @@ player_sprite.png::CompressedTexture2D/CompressedTexture2D::5133116946116834136:
 ground_tile.png::CompressedTexture2D/CompressedTexture2D::8607594662008120370::1750853624::1750853708::1::::<><><>0<>0<>53aa32d746db992000530efacafd1e5f<>res://.godot/imported/ground_tile.png-e0a3586cc472d08da4d393292bc53693.ctex::
 image.png::CompressedTexture2D/CompressedTexture2D::5588021689566170473::1750868145::1750868720::1::::<><><>0<>0<>9a45df072a50d8ce45067da5c744092a<>res://.godot/imported/image.png-57bd0e53a21993ff6a0c7384050ceba3.ctex::
 ::res://autoload/::1750810397
-::res://buttons/::1751159737
-continue.png::CompressedTexture2D/CompressedTexture2D::6003226191334692760::1751159708::1751159737::1::::<><><>0<>0<>c3b312923b56c619c111b9f8309296e3<>res://.godot/imported/continue.png-899513738ba9197ac747de7649592e84.ctex::
+::res://buttons/::1751201102
+continue.png::CompressedTexture2D/CompressedTexture2D::6003226191334692760::1751200951::1751200981::1::::<><><>0<>0<>c3b312923b56c619c111b9f8309296e3<>res://.godot/imported/continue.png-899513738ba9197ac747de7649592e84.ctex::
 exit.png::CompressedTexture2D/CompressedTexture2D::180064196116646999::1751155862::1751155884::1::::<><><>0<>0<>c6f4899f6f6bc1b2f7e8a44013bec5a9<>res://.godot/imported/exit.png-e72b5c8e25b886e61031511bb41a0edd.ctex::
 image.png::CompressedTexture2D/CompressedTexture2D::6785672544008580170::1751150638::1751150640::1::::<><><>0<>0<>44340d1360cd8ed6a24893544a037950<>res://.godot/imported/image.png-8eca466b0c6c0d1e51c69dde2824eaa6.ctex::
+main menu.png::CompressedTexture2D::5990159279544938848::1751201086::1751201102::1::::<><><>0<>0<>58dc6954bf7fc2d34a3bcc8dadb8fa34<>res://.godot/imported/main menu.png-4178d65e56b4e24c0565d3d93460c3f5.ctex::
 mainmenustart.png::CompressedTexture2D/CompressedTexture2D::1665773142606088819::1751154152::1751154176::1::::<><><>0<>0<>95eece73cb294db6dfd13fe58d772d3a<>res://.godot/imported/mainmenustart.png-f4c13dedcebd9fba7ad090a1122a868b.ctex::
 optionS.png::CompressedTexture2D/CompressedTexture2D::3237205982288657251::1751154444::1751154462::1::::<><><>0<>0<>52558daf1416817d6a52f2cf7ee8c06f<>res://.godot/imported/optionS.png-42ed776315f0f2b1053eca7c09ce84de.ctex::
 texture.png::CompressedTexture2D/CompressedTexture2D::6636705488672436779::1751149532::1751149573::1::::<><><>0<>0<>a24356062f7184a20dc9c5b935c5cc8b<>res://.godot/imported/texture.png-b43f8c4241929e31a509448f561e7acd.ctex::
@@ -37,31 +40,37 @@ texture.png::CompressedTexture2D/CompressedTexture2D::6636705488672436779::17511
 week-01.02.md::TextFile/TextFile::-1::1751051222::0::1::::<><><>0<>0<><>::
 week-01.03.md::TextFile/TextFile::-1::1751160081::0::1::::<><><>0<>0<><>::
 week-01.md::TextFile/TextFile::-1::1750882081::0::1::::<><><>0<>0<><>::
-::res://scenes/::1750810276
+::res://scenes/::1751206179
 ::res://scenes/enemies/::1750810309
-::res://scenes/levels/::1751160676
+::res://scenes/levels/::1751210854
 image.png::CompressedTexture2D/CompressedTexture2D::199252798929221519::1750869318::1750868833::1::::<><><>0<>0<>4908f0e88c0d74e6ec021fae928aa06e<>res://.godot/imported/image.png-a3117ab8d278f09124ac7b8d15d4f6b0.ctex::
-test_level.tscn::PackedScene::8966515730967733576::1751160676::0::1::::<><><>0<>0<><>::uid://dpitmafhquhjo::::res://assets/background/image.png<>uid://clu45vlk1s4u4::::res://assets/tiles/image.png<>uid://dh87ucwi4yk8x::::res://scenes/player/player.tscn<>uid://byl3q0x0ub3p0::::res://scenes/ui/hud.tscn<>uid://vixgn8p2oc5c::::res://scenes/ui/DeathScreen.tscn
+canvas_layer.gd::GDScript::1184348927084949566::1751204371::0::1::::<>CanvasLayer<><>0<>0<><>::
+test_level.gd::GDScript::4845386951040828933::1751203838::0::1::::<>Node2D<><>0<>0<><>::
+test_level.tscn::PackedScene::8966515730967733576::1751210854::0::1::::<><><>0<>0<><>::uid://dpitmafhquhjo::::res://assets/background/image.png<>uid://clu45vlk1s4u4::::res://assets/tiles/image.png<>uid://dh87ucwi4yk8x::::res://scenes/player/player.tscn<>uid://q4yb3gkism67::::res://scenes/levels/canvas_layer.gd<>uid://byl3q0x0ub3p0::::res://scenes/ui/hud.tscn<>uid://vixgn8p2oc5c::::res://scenes/ui/DeathScreen.tscn<>uid://qnoomkjdeem7::::res://scenes/ui/pause_menu.tscn<>uid://n6hejpj7vr7d::::res://scenes/pickups/flame_pickup.tscn
 Снимок экрана 2025-06-25 в 7.45.30 PM.png::CompressedTexture2D/CompressedTexture2D::3575331398184259915::1750869932::1750869933::1::::<><><>0<>0<>32fd85c385551d2dab42b522ed443c69<>res://.godot/imported/Снимок экрана 2025-06-25 в 7.45.30 PM.png-21fb451d7e3b25576aad3ab56dce607c.ctex::
-::res://scenes/player/::1751160676
-player.gd::GDScript/GDScript::756655342382671115::1751129351::0::1::::<>CharacterBody2D<><>0<>0<><>::
-player.tscn::PackedScene::7720687221511717809::1751160676::0::1::::<><><>0<>0<><>::uid://k1sadntinmj8::::res://scenes/player/player.gd<>uid://cferxlgh7w5j5::::res://assets/player/player_sprite.png<>uid://e5mg8wfigfth::::res://assets/lights/flame_light_texture.png
-::res://scenes/ui/::1751160688
-DeathScreen.tscn::PackedScene::1491888678528479942::1751160676::0::1::::<><><>0<>0<><>::uid://3p21gxpbef1l::::res://assets/background/deathscreen.png<>uid://caqx054j7om7d::::res://scenes/ui/death_screen.gd
+::res://scenes/pickups/::1751210855
+flame_pickup.tscn::PackedScene::976883336130004111::1751210855::0::1::::<><><>0<>0<><>::uid://imj6iha3xsop::::res://scenes/pickups/flame_pickup.gd<>uid://c0lmpk3ooksgv::::res://assets/effects/fire_no_bg.png<>uid://e5mg8wfigfth::::res://assets/lights/flame_light_texture.png<>uid://by57od2befiaw::::res://scenes/pickups/point_light_2d.gd
+flame_pickup.gd::GDScript::586885525737701099::1751209951::0::1::::<>Area2D<><>0<>0<><>::
+point_light_2d.gd::GDScript::4134852407841623166::1751208823::0::1::::<>PointLight2D<><>0<>0<><>::
+::res://scenes/player/::1751210854
+player.gd::GDScript::756655342382671115::1751204593::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::7720687221511717809::1751210854::0::1::::<><><>0<>0<><>::uid://k1sadntinmj8::::res://scenes/player/player.gd<>uid://cferxlgh7w5j5::::res://assets/player/player_sprite.png<>uid://e5mg8wfigfth::::res://assets/lights/flame_light_texture.png
+::res://scenes/ui/::1751210855
+DeathScreen.tscn::PackedScene::1491888678528479942::1751210854::0::1::::<><><>0<>0<><>::uid://3p21gxpbef1l::::res://assets/background/deathscreen.png<>uid://caqx054j7om7d::::res://scenes/ui/death_screen.gd
 death_screen.gd::GDScript/GDScript::4807314168084488771::1751050670::0::1::::<>Control<><>0<>0<><>::
-exit.gdshader::Shader::1048397336725456754::1751160688::0::1::::<><><>0<>0<><>::
+exit.gdshader::Shader::1048397336725456754::1751210855::0::1::::<><><>0<>0<><>::
 hud.gd::GDScript/GDScript::8388919504854066333::1751047033::0::1::::<>CanvasLayer<><>0<>0<><>::
-hud.tscn::PackedScene::4095391084577414831::1751160676::0::1::::<><><>0<>0<><>::uid://bou1ia7yq82rm::::res://assets/lights/FlameIcon.png<>uid://drrwjqcor4wef::::res://scenes/ui/hud.gd<>uid://c4yn8nbrw7gro::::res://assets/effects/полоса.png
-main_menu.gdshader::Shader::3574691339031250437::1751160688::0::1::::<><><>0<>0<><>::
-main_menu.tscn::PackedScene::2090379674532849502::1751160676::0::1::::<><><>0<>0<><>::uid://oxqrlmki58js::::res://scripts/ui/main_menu.gd<>uid://1gxahvblf7ya::::res://assets/background/main menu.png<>uid://bq6uv5td3x1d6::::res://scenes/ui/main_menu.gdshader<>uid://c1s4tmv8wa348::::res://buttons/texture.png<>uid://m6ebj6asyes6::::res://assets/effects/fire_transparent.png<>uid://beappvex1qsp1::::res://scenes/ui/start_button.gdshader<>uid://xy6bmtn6rc5x::::res://buttons/mainmenustart.png<>uid://bmeekr4g74pux::::res://buttons/optionS.png<>uid://wnq271u4q5mc::::res://scenes/ui/options.gdshader<>uid://cthvpo6eslwp::::res://buttons/exit.png<>uid://cx57x8yndvl4o::::res://assets/effects/pngtree-fire-sparks-glowing-texture-png-image_6140114.png<>uid://o637lkwhw8ly::::res://scenes/ui/exit.gdshader
-options.gdshader::Shader::1572012881019430754::1751160688::0::1::::<><><>0<>0<><>::
-pause_menu.tscn::PackedScene::1150734094166030264::1751160676::0::1::::<><><>0<>0<><>::uid://cxg1kfm4kc8hc::::res://scripts/ui/pause_menu.gd<>uid://crsai1t13mxtw::::res://buttons/continue.png
+hud.tscn::PackedScene::4095391084577414831::1751210855::0::1::::<><><>0<>0<><>::uid://bou1ia7yq82rm::::res://assets/lights/FlameIcon.png<>uid://drrwjqcor4wef::::res://scenes/ui/hud.gd<>uid://c4yn8nbrw7gro::::res://assets/effects/полоса.png
+main_menu.gdshader::Shader::3574691339031250437::1751210855::0::1::::<><><>0<>0<><>::
+main_menu.tscn::PackedScene::2090379674532849502::1751210855::0::1::::<><><>0<>0<><>::uid://oxqrlmki58js::::res://scripts/ui/main_menu.gd<>uid://1gxahvblf7ya::::res://assets/background/main menu.png<>uid://bq6uv5td3x1d6::::res://scenes/ui/main_menu.gdshader<>uid://c1s4tmv8wa348::::res://buttons/texture.png<>uid://m6ebj6asyes6::::res://assets/effects/fire_transparent.png<>uid://beappvex1qsp1::::res://scenes/ui/start_button.gdshader<>uid://xy6bmtn6rc5x::::res://buttons/mainmenustart.png<>uid://bmeekr4g74pux::::res://buttons/optionS.png<>uid://wnq271u4q5mc::::res://scenes/ui/options.gdshader<>uid://cthvpo6eslwp::::res://buttons/exit.png<>uid://cx57x8yndvl4o::::res://assets/effects/pngtree-fire-sparks-glowing-texture-png-image_6140114.png<>uid://o637lkwhw8ly::::res://scenes/ui/exit.gdshader
+options.gdshader::Shader::1572012881019430754::1751210855::0::1::::<><><>0<>0<><>::
+pause_menu.tscn::PackedScene::1150734094166030264::1751210855::0::1::::<><><>0<>0<><>::uid://cxg1kfm4kc8hc::::res://scripts/ui/pause_menu.gd<>uid://crsai1t13mxtw::::res://buttons/continue.png<>uid://crlxbvw6ect0s::::res://buttons/main menu.png
 point_light_2d.gd::GDScript/GDScript::7446777762264927931::1751152312::0::1::::<>PointLight2D<><>0<>0<><>::
 shader_globals_override.gd::GDScript/GDScript::4225804805343325059::1751149148::0::1::::<>ShaderGlobalsOverride<><>0<>0<><>::
-start_button.gdshader::Shader::2668114710295281376::1751160688::0::1::::<><><>0<>0<><>::
-::res://scripts/::1750810360
+start_button.gdshader::Shader::2668114710295281376::1751210855::0::1::::<><><>0<>0<><>::
+::res://scripts/::1751160905
 ::res://scripts/enemies/::1750810373
 ::res://scripts/player/::1750810222
-::res://scripts/ui/::1751160445
-main_menu.gd::GDScript/GDScript::1031126926417241976::1751159506::0::1::::<>Control<><>0<>0<><>::
-pause_menu.gd::GDScript/GDScript::6401167819821793988::1751126149::0::1::::<>Control<><>0<>0<><>::
+::res://scripts/ui/::1751206664
+main_menu.gd::GDScript::1031126926417241976::1751206664::0::1::::<>Control<><>0<>0<><>::
+pause_menu.gd::GDScript::6401167819821793988::1751203569::0::1::::<>Control<><>0<>0<><>::

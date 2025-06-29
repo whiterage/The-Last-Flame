@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dh87ucwi4yk8x"]
+[gd_scene load_steps=6 format=3 uid="uid://dh87ucwi4yk8x"]
 
 [ext_resource type="Script" uid="uid://k1sadntinmj8" path="res://scenes/player/player.gd" id="1_8afob"]
 [ext_resource type="Texture2D" uid="uid://cferxlgh7w5j5" path="res://assets/player/player_sprite.png" id="2_dovo2"]
@@ -7,7 +7,10 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dovo2"]
 size = Vector2(32, 64)
 
-[node name="Player" type="CharacterBody2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gmlin"]
+size = Vector2(26, 64)
+
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_8afob")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -25,3 +28,9 @@ color = Color(1, 0.647059, 0, 1)
 energy = 2.0
 texture = ExtResource("3_gmlin")
 texture_scale = 3.0
+
+[node name="AttackArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
+position = Vector2(25, 0)
+shape = SubResource("RectangleShape2D_gmlin")

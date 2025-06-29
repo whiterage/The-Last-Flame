@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://n6hejpj7vr7d"]
+
+[ext_resource type="Script" uid="uid://imj6iha3xsop" path="res://scenes/pickups/flame_pickup.gd" id="1_4wotw"]
+[ext_resource type="Texture2D" uid="uid://c0lmpk3ooksgv" path="res://assets/effects/fire_no_bg.png" id="2_pw2h4"]
+[ext_resource type="Texture2D" uid="uid://e5mg8wfigfth" path="res://assets/lights/flame_light_texture.png" id="3_0vjqh"]
+[ext_resource type="Script" uid="uid://by57od2befiaw" path="res://scenes/pickups/point_light_2d.gd" id="4_strje"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pw2h4"]
+radius = 27.0185
+
+[node name="FlamePickup" type="Area2D"]
+collision_layer = 2
+script = ExtResource("1_4wotw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(45, 43)
+scale = Vector2(0.0703124, 0.0705566)
+texture = ExtResource("2_pw2h4")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(46, 53)
+scale = Vector2(0.6213, 0.549231)
+color = Color(1, 0.529412, 0.0901961, 1)
+energy = 0.39
+texture = ExtResource("3_0vjqh")
+texture_scale = 0.76
+script = ExtResource("4_strje")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(46, 48)
+shape = SubResource("CircleShape2D_pw2h4")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
