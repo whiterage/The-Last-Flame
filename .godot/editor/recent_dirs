@@ -1,7 +1,7 @@
-res://scenes/ui
 res://buttons
+res://assets/effects
 res://assets/background
-res://assets/effects hud
+res://scenes/ui
 res://assets/lights
 res://assets/tiles
 res://assets/player

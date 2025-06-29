@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://mj1vgaa3r78h"
-path="res://.godot/imported/фон.png-95dad7b3d4c24859230fa18e24015409.ctex"
+uid="uid://c4yn8nbrw7gro"
+path="res://.godot/imported/полоса.png-4d6bb7828814c2dc19c49e4e78c47fb6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/effects hud/фон.png"
-dest_files=["res://.godot/imported/фон.png-95dad7b3d4c24859230fa18e24015409.ctex"]
+source_file="res://assets/effects/полоса.png"
+dest_files=["res://.godot/imported/полоса.png-4d6bb7828814c2dc19c49e4e78c47fb6.ctex"]
 
 [params]
 

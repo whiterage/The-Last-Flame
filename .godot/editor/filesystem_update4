@@ -7,3 +7,8 @@ res://scenes/ui/DeathScreen.tscn
 res://pause_menu.gd
 res://scenes/ui/pause_menu.tscn
 res://scenes/player/player.gd
+res://scenes/ui/main_menu.gdshader
+res://scenes/ui/point_light_2d.gd
+res://scenes/ui/start_button.gdshader
+res://scenes/ui/options.gdshader
+res://scenes/ui/exit.gdshader

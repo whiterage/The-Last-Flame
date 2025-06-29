@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bou1ia7yq82rm" path="res://assets/lights/FlameIcon.png" id="1_0mwgc"]
 [ext_resource type="Script" uid="uid://drrwjqcor4wef" path="res://scenes/ui/hud.gd" id="1_bo48s"]
-[ext_resource type="Texture2D" uid="uid://c4yn8nbrw7gro" path="res://assets/effects hud/полоса.png" id="1_hqnrr"]
+[ext_resource type="Texture2D" path="res://assets/effects hud/полоса.png" id="1_hqnrr"]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_bo48s")

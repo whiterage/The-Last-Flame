@@ -1,7 +1,35 @@
-[gd_scene load_steps=3 format=3 uid="uid://41uioq03sd8a"]
+[gd_scene load_steps=17 format=3 uid="uid://41uioq03sd8a"]
 
 [ext_resource type="Script" uid="uid://oxqrlmki58js" path="res://main_menu.gd" id="1_fe2o3"]
-[ext_resource type="Texture2D" uid="uid://cwy4fibdsltl" path="res://assets/background/фон для main menu.png" id="2_1g8jr"]
+[ext_resource type="Texture2D" uid="uid://1gxahvblf7ya" path="res://assets/background/main menu.png" id="2_fe2o3"]
+[ext_resource type="Shader" uid="uid://bq6uv5td3x1d6" path="res://scenes/ui/main_menu.gdshader" id="3_m1kxf"]
+[ext_resource type="Texture2D" uid="uid://c1s4tmv8wa348" path="res://buttons/texture.png" id="4_uhagc"]
+[ext_resource type="Texture2D" uid="uid://m6ebj6asyes6" path="res://assets/effects/fire_transparent.png" id="4_x2yvf"]
+[ext_resource type="Shader" uid="uid://beappvex1qsp1" path="res://scenes/ui/start_button.gdshader" id="6_q85j6"]
+[ext_resource type="Texture2D" uid="uid://xy6bmtn6rc5x" path="res://buttons/mainmenustart.png" id="6_wb0q5"]
+[ext_resource type="Texture2D" uid="uid://bmeekr4g74pux" path="res://buttons/optionS.png" id="7_q85j6"]
+[ext_resource type="Shader" uid="uid://wnq271u4q5mc" path="res://scenes/ui/options.gdshader" id="8_7suek"]
+[ext_resource type="Texture2D" uid="uid://cthvpo6eslwp" path="res://buttons/exit.png" id="8_8g5eo"]
+[ext_resource type="Texture2D" uid="uid://cx57x8yndvl4o" path="res://assets/effects/pngtree-fire-sparks-glowing-texture-png-image_6140114.png" id="8_otr3d"]
+[ext_resource type="Shader" uid="uid://o637lkwhw8ly" path="res://scenes/ui/exit.gdshader" id="10_7suek"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uhagc"]
+shader = ExtResource("3_m1kxf")
+shader_parameter/noise_texture = ExtResource("4_uhagc")
+shader_parameter/speed = 0.8
+shader_parameter/strength = 0.02
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8g5eo"]
+shader = ExtResource("6_q85j6")
+shader_parameter/glow_strength = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_otr3d"]
+shader = ExtResource("8_7suek")
+shader_parameter/glow_strength = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8ekit"]
+shader = ExtResource("10_7suek")
+shader_parameter/glow_strength = 0.0
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -12,39 +40,117 @@ script = ExtResource("1_fe2o3")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("2_1g8jr")
+offset_right = 1919.0
+offset_bottom = 1080.0
+texture = ExtResource("2_fe2o3")
 
-[node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+[node name="FireSprite" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_uhagc")
+position = Vector2(1010, 593)
+texture = ExtResource("4_x2yvf")
 
-[node name="start game" type="Button" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
-offset_left = 712.0
-offset_top = 653.0
-offset_right = 912.0
-offset_bottom = 698.0
+offset_left = 1379.0
+offset_top = 546.0
+offset_right = 2271.0
+offset_bottom = 1563.0
+scale = Vector2(0.4, 0.4)
+theme_override_constants/separation = 50
+
+[node name="start_game" type="Button" parent="VBoxContainer"]
+material = SubResource("ShaderMaterial_8g5eo")
+layout_mode = 2
+focus_mode = 0
+icon = ExtResource("6_wb0q5")
 flat = true
 
-[node name="Options" type="Button" parent="."]
-layout_mode = 0
-offset_left = 746.0
-offset_top = 727.0
-offset_right = 883.0
-offset_bottom = 774.0
+[node name="FireParticles" type="CPUParticles2D" parent="VBoxContainer/start_game"]
+position = Vector2(70, 277.5)
+rotation = -1.40324
+amount = 5
+texture = ExtResource("8_otr3d")
+gravity = Vector2(0, -20)
+initial_velocity_min = 50.0
+initial_velocity_max = 100.0
+scale_amount_min = 0.1
+scale_amount_max = 0.2
+
+[node name="FireParticles2" type="CPUParticles2D" parent="VBoxContainer/start_game"]
+position = Vector2(802.5, 280)
+rotation = -1.40324
+amount = 5
+texture = ExtResource("8_otr3d")
+gravity = Vector2(0, -20)
+initial_velocity_min = 50.0
+initial_velocity_max = 100.0
+scale_amount_min = 0.1
+scale_amount_max = 0.2
+
+[node name="options" type="Button" parent="VBoxContainer"]
+material = SubResource("ShaderMaterial_otr3d")
+layout_mode = 2
+focus_mode = 0
+icon = ExtResource("7_q85j6")
 flat = true
 
-[node name="quit" type="Button" parent="."]
-layout_mode = 0
-offset_left = 773.0
-offset_top = 798.0
-offset_right = 854.0
-offset_bottom = 844.0
+[node name="FireParticles3" type="CPUParticles2D" parent="VBoxContainer/options"]
+position = Vector2(70, 277.5)
+rotation = -1.40324
+amount = 5
+texture = ExtResource("8_otr3d")
+gravity = Vector2(0, -20)
+initial_velocity_min = 50.0
+initial_velocity_max = 100.0
+scale_amount_min = 0.1
+scale_amount_max = 0.2
+
+[node name="FireParticles4" type="CPUParticles2D" parent="VBoxContainer/options"]
+position = Vector2(802.5, 280)
+rotation = -1.40324
+amount = 5
+texture = ExtResource("8_otr3d")
+gravity = Vector2(0, -20)
+initial_velocity_min = 50.0
+initial_velocity_max = 100.0
+scale_amount_min = 0.1
+scale_amount_max = 0.2
+
+[node name="exit" type="Button" parent="VBoxContainer"]
+material = SubResource("ShaderMaterial_8ekit")
+layout_mode = 2
+focus_mode = 0
+icon = ExtResource("8_8g5eo")
 flat = true
 
-[connection signal="pressed" from="start game" to="." method="_on_start_game_pressed"]
-[connection signal="pressed" from="Options" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
+[node name="FireParticles5" type="CPUParticles2D" parent="VBoxContainer/exit"]
+position = Vector2(70, 277.5)
+rotation = -1.40324
+amount = 5
+texture = ExtResource("8_otr3d")
+gravity = Vector2(0, -20)
+initial_velocity_min = 50.0
+initial_velocity_max = 100.0
+scale_amount_min = 0.1
+scale_amount_max = 0.2
+
+[node name="FireParticles6" type="CPUParticles2D" parent="VBoxContainer/exit"]
+position = Vector2(802.5, 280)
+rotation = -1.40324
+amount = 5
+texture = ExtResource("8_otr3d")
+gravity = Vector2(0, -20)
+initial_velocity_min = 50.0
+initial_velocity_max = 100.0
+scale_amount_min = 0.1
+scale_amount_max = 0.2
+
+[connection signal="mouse_entered" from="VBoxContainer/start_game" to="." method="_on_start_game_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/start_game" to="." method="_on_start_game_mouse_exited"]
+[connection signal="pressed" from="VBoxContainer/start_game" to="." method="_on_start_game_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/options" to="." method="_on_options_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/options" to="." method="_on_options_mouse_exited"]
+[connection signal="pressed" from="VBoxContainer/options" to="." method="_on_options_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/exit" to="." method="_on_exit_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/exit" to="." method="_on_exit_mouse_exited"]
+[connection signal="pressed" from="VBoxContainer/exit" to="." method="_on_exit_pressed"]

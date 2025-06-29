@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4yn8nbrw7gro"
-path="res://.godot/imported/полоса.png-b29ca8d93458b110678149a8d651d99f.ctex"
+uid="uid://cx57x8yndvl4o"
+path="res://.godot/imported/pngtree-fire-sparks-glowing-texture-png-image_6140114.png-792316f1760490fc9d52eafe226ab065.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/effects hud/полоса.png"
-dest_files=["res://.godot/imported/полоса.png-b29ca8d93458b110678149a8d651d99f.ctex"]
+source_file="res://assets/effects/pngtree-fire-sparks-glowing-texture-png-image_6140114.png"
+dest_files=["res://.godot/imported/pngtree-fire-sparks-glowing-texture-png-image_6140114.png-792316f1760490fc9d52eafe226ab065.ctex"]
 
 [params]
 
